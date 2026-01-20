@@ -5,11 +5,11 @@ const About = () => {
     <main className="w-full min-h-dvn mt-20 max-md:mt-40 ">
       {/* เนื้อหาเกี่ยวกับprojectที่ทำ */}
       <section className=" w-full min-h-screen grid grid-cols-5 rows-4 gap-4 max-md:flex flex-col">
-        <div className="col-span-2 row-span-4 flex flex-col justify-between  bg-white p-6 rounded-4xl shadow-sm mt-4 ">
-          <h1 className="mt-6 font-bold text-8xl text-shadow-lg text-shadow-gray-500 max-md:text-4xl max-md:my-4 ">
+        <div className="col-span-2 row-span-3 flex flex-col justify-between  bg-white p-6 rounded-4xl shadow-sm mt-4 ">
+          <h1 className="mt-20 font-bold text-6xl text-shadow-lg text-shadow-gray-500 max-md:text-4xl max-md:my-4 ">
             Prompt Print
           </h1>
-          <p className="font-light text-2xl text-balance  max-md:text-[20px ">
+          <p className="font-light text-xl text-justify  max-md:text-5 ">
             At Prompt Print Shop, imagination has no limits. We seamlessly blend
             Prompt Engineering with your creative vision. By producing every
             item on-demand, we prioritize sustainability and eliminate
@@ -20,7 +20,7 @@ const About = () => {
         </div>
         <div className="flex flex-col col-span-3 col-start-3  row-start-1 row-span-3  bg-[url(/about-bg.png)] bg-no-repeat bg-cover bg-center rounded-4xl mt-4">
           <div className="h-2/5 flex items-center justify-center ">
-            <h2 className=" text-gray-100 text-center font-bold text-8xl text-shadow-lg text-shadow-black max-md:text-6xl">
+            <h2 className=" text-gray-100 text-center font-bold text-6xl text-shadow-lg text-shadow-black max-md:text-6xl">
               Products
             </h2>
           </div>
@@ -42,7 +42,7 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="col-start-3 col-span-3 row-start-4 row-span-1  bg-white  rounded-4xl shadow-sm max-md:h-auto w-full ">
+        <div className="col-start-1 col-span-5 row-start-4 row-span-1  bg-white  rounded-4xl shadow-sm max-md:h-auto w-full ">
           <div className="w-full h-full flex justify-evenly items-center ">
             <h2 className="text-6xl font-bold text-shadow-lg text-shadow-gray-500 max-md:text-4xl max-md:p-1.5">
               Development team
