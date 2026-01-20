@@ -40,12 +40,11 @@ const App = () => {
         <Route path="about" element={<About />} />
         <Route path="faqs" element={<Faqs />} />
         <Route path="membership" element={<Membership />} />
-        <Route path="login" element={<Login />} />
-        <Route path="signup" element={<Register />} />
-        <Route path="forgetpassword" element={<ForgetPassword />} />
-        <Route path="resetpassword" element={<ResetPassword />} />
       </Route>
-
+      <Route path="login" element={<Login />} />
+      <Route path="signup" element={<Register />} />
+      <Route path="forgetpassword" element={<ForgetPassword />} />
+      <Route path="resetpassword" element={<ResetPassword />} />
       {/* 404 */}
       <Route
         path="*"

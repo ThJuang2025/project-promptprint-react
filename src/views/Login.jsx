@@ -17,7 +17,7 @@ export default function Login() {
       className="flex justify-center items-center min-h-screen bg-no-repeat bg-cover bg-center"
       style={{ backgroundImage: "url('/bg.jpg')" }}
     >
-      <form className="flex flex-col gap-4 p-18 rounded-3xl backdrop-blur-xs shadow-xl min-w-[350px]">
+      <form className="flex flex-col gap-4 p-18 rounded-3xl backdrop-blur-xs shadow-xl min-w-87.5">
         <h2 className="font-bold text-3xl text-center text-white">Login</h2>
 
         <input
