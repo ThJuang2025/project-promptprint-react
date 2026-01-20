@@ -6,7 +6,11 @@ const ProductCard = ({ product }) => {
   return (
     <div className="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
       {/* Image Container */}
+<<<<<<< HEAD
       <div className="relative aspect-4/5 bg-gray-100 overflow-hidden">
+=======
+      <div className="relative aspect-[4/5] bg-gray-100 overflow-hidden">
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
         <Link to={`/design/${product.id}`}>
           <img
             src={product.image}
@@ -59,11 +63,19 @@ const ProductCard = ({ product }) => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-lg font-bold text-gray-900">
+<<<<<<< HEAD
               ฿{product.price.toLocaleString()}
             </span>
             {product.originalPrice && (
               <span className="text-sm text-gray-400 line-through">
                 ฿{product.originalPrice.toLocaleString()}
+=======
+              ${product.price}
+            </span>
+            {product.originalPrice && (
+              <span className="text-sm text-gray-400 line-through">
+                ${product.originalPrice}
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
               </span>
             )}
           </div>

@@ -33,7 +33,11 @@ function SummaryOrder({ totalPrice }) {
 
           <a
             href="checkout.html"
+<<<<<<< HEAD
             className="block w-full py-4 bg-gray-900 text-white rounded-xl font-bold text-center text-lg shadow-lg hover:bg-gray-800 transition-transform hover:scale-[1.02"
+=======
+            className="block w-full py-4 bg-gray-900 text-white rounded-xl font-bold text-center text-lg shadow-lg hover:bg-gray-800 transition-transform hover:scale-[1.02]"
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
           >
             Checkout
           </a>

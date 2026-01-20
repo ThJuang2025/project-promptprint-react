@@ -23,8 +23,8 @@ export default function Register() {
         <input
           type="password"
           placeholder="Password"
-          minlength={8}
-          maxlength={20}
+          minLength={8}
+          maxLength={20}
           className="bg-white py-2 px-3 w-80 rounded-xl"
           required
         />
@@ -50,7 +50,7 @@ export default function Register() {
           </Link>
         </span>
         <hr />
-        <button className="flex justify-center items-center bg-amber-300 font-medium gap-2 hover:cursor-pointer">
+        <button className="flex justify-center items-center rounded-xl bg-amber-300 font-medium gap-2 hover:cursor-pointer">
           <img
             src="google.png"
             alt="Google logo"

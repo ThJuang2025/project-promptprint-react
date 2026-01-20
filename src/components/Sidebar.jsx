@@ -7,6 +7,7 @@ import {
   Watch,
   Tag,
   ChevronRight,
+<<<<<<< HEAD
   Home,
   ChevronLeft,
   Sparkles,
@@ -26,6 +27,16 @@ const Sidebar = ({ isOpen, onClose, variant = "drawer" }) => {
       path: "/ai-design",
       icon: <Sparkles className="w-5 h-5 text-purple-500" />,
     },
+=======
+  Menu as MenuIcon,
+} from "lucide-react";
+
+const Sidebar = ({ isOpen, onClose, variant = "drawer" }) => {
+  const location = useLocation();
+  const isDrawer = variant === "drawer";
+
+  const menuItems = [
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
     { name: "Men", path: "/category/men", icon: <Shirt className="w-5 h-5" /> },
     {
       name: "Women",
@@ -60,6 +71,7 @@ const Sidebar = ({ isOpen, onClose, variant = "drawer" }) => {
           onClick={onClose}
         />
       )}
+<<<<<<< HEAD
 
       {/* Sidebar Container */}
       <div
@@ -154,6 +166,93 @@ const Sidebar = ({ isOpen, onClose, variant = "drawer" }) => {
               );
             })}
           </nav>
+=======
+
+      {/* Sidebar Container */}
+      <div
+        className={`${
+          isDrawer
+            ? `fixed top-0 left-0 h-full z-50 transform transition-transform duration-300 ease-in-out ${
+                isOpen ? "translate-x-0" : "-translate-x-full"
+              }`
+            : "relative h-full w-64 hidden lg:flex flex-col border-r border-gray-200 bg-white"
+        } ${isDrawer ? "bg-white shadow-2xl" : ""}`}
+      >
+        <div className="flex flex-col h-full">
+          {/* Logo Header */}
+          <div className="flex items-center justify-between p-6 border-b border-gray-100">
+            <Link to="/" className="flex items-center gap-2 group">
+              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center text-white font-bold shadow-lg shadow-blue-500/30 group-hover:scale-105 transition-transform">
+                P
+              </div>
+              <span className="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent group-hover:from-blue-600 group-hover:to-indigo-600 transition-all">
+                PromptPrint
+              </span>
+            </Link>
+            {isDrawer && (
+              <button
+                onClick={onClose}
+                className="p-2 -mr-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full transition-colors"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            )}
+          </div>
+
+          {!isDrawer && <div className="h-2" />}
+
+          {/* Navigation Links */}
+          <nav className="flex-1 overflow-y-auto px-4 space-y-1">
+            {menuItems.map((item) => {
+              const isActive = location.pathname === item.path;
+              return (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  onClick={isDrawer ? onClose : undefined}
+                  className={`group flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 ${
+                    isActive
+                      ? "bg-red-50 text-red-600 font-medium"
+                      : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+                  }`}
+                >
+                  <span
+                    className={`transition-colors ${
+                      isActive
+                        ? "text-red-600"
+                        : "text-gray-400 group-hover:text-gray-600"
+                    }`}
+                  >
+                    {item.icon}
+                  </span>
+                  <span>{item.name}</span>
+                  {isActive && (
+                    <div className="ml-auto w-1.5 h-1.5 rounded-full bg-red-600" />
+                  )}
+                </Link>
+              );
+            })}
+          </nav>
+
+          
+          {/* <div className="p-4 border-t border-gray-100">
+            {!isDrawer ? (
+              <div className="text-xs text-gray-400 text-center">
+                © 2024 PromptPrint
+              </div>
+            ) : (
+              <div className="bg-gradient-to-br from-indigo-500 to-blue-600 rounded-2xl p-4 text-white shadow-lg">
+                <p className="text-sm font-medium opacity-90 mb-1">
+                  New Collection
+                </p>
+                <h3 className="text-lg font-bold mb-3">Summer Sale is Live!</h3>
+                <button className="w-full py-2 bg-white/20 hover:bg-white/30 backdrop-blur-md rounded-lg text-sm font-semibold transition-colors">
+                  Shop Now
+                </button>
+              </div>
+            )}
+          </div> */}
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
         </div>
       </div>
     </>

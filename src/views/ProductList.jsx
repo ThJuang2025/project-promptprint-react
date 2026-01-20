@@ -13,6 +13,7 @@ const ProductList = () => {
   });
   const navigate = useNavigate();
 
+<<<<<<< HEAD
   useEffect(() => {
     const fetchProducts = async () => {
       try {
@@ -25,6 +26,21 @@ const ProductList = () => {
         console.error("Error fetching products:", error);
       }
     };
+=======
+  const fetchProducts = async () => {
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/products`
+      );
+      const data = await response.json();
+      setProducts(data);
+    } catch (error) {
+      console.error("Error fetching products:", error);
+    }
+  };
+
+  useEffect(() => {
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
     fetchProducts();
   }, []);
 
@@ -52,7 +68,11 @@ const ProductList = () => {
   return (
     <div className="container mx-auto p-6 min-h-screen bg-black text-white">
       <div className="flex justify-between items-center mb-8">
+<<<<<<< HEAD
         <h1 className="text-4xl font-extrabold bg-linear-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">
+=======
+        <h1 className="text-4xl font-extrabold bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
           Shop Collection
         </h1>
         <button
@@ -109,11 +129,19 @@ const ProductList = () => {
 
               <div className="flex items-center justify-between mt-auto">
                 <span className="text-2xl font-bold text-white">
+<<<<<<< HEAD
                   ฿{product.price.toLocaleString()}
                 </span>
                 <button
                   onClick={() => addToCart(product)}
                   className="px-4 py-2 bg-linear-to-r from-cyan-600 to-blue-600 rounded-lg font-semibold text-sm hover:from-cyan-500 hover:to-blue-500 transition-all shadow-lg shadow-blue-900/20 active:scale-95"
+=======
+                  ${product.price}
+                </span>
+                <button
+                  onClick={() => addToCart(product)}
+                  className="px-4 py-2 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-lg font-semibold text-sm hover:from-cyan-500 hover:to-blue-500 transition-all shadow-lg shadow-blue-900/20 active:scale-95"
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
                 >
                   Add to Cart
                 </button>

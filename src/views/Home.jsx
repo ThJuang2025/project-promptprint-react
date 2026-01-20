@@ -3,23 +3,76 @@ import ProductCard from "../components/ProductCard";
 
 const Home = () => {
   // Dummy Data
+<<<<<<< HEAD
   // Dummy Data (Removed)
   const products = [];
+=======
+  const products = [
+    {
+      id: 1,
+      title: "เสื้อยืด",
+      price: 850,
+      originalPrice: 35.0,
+      discount: 17,
+      category: "Men",
+      image:
+        "https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      isNew: true,
+    },
+    {
+      id: 2,
+      title: "สินค้า",
+      price: 0,
+      category: "Unisex",
+      image:
+        "https://images.unsplash.com/photo-1578768076057-3d98fb27da29?q=80&w=2570&auto=format&fit=crop",
+    },
+    {
+      id: 3,
+      title: "ถุงผ้า",
+      price: 250,
+      category: "Accessories",
+      image:
+        "https://images.unsplash.com/photo-1544816155-12df9643f363?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    },
+    {
+      id: 4,
+      title: "เสื้อเด็ก",
+      price: 150,
+      originalPrice: 24.0,
+      category: "Kids",
+      image:
+        "https://images.unsplash.com/photo-1519278470570-c7500beee821?q=80&w=2574&auto=format&fit=crop",
+      isNew: true,
+    },
+  ];
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
 
   return (
     <div className="w-full">
       {/* Featured Products Section */}
+<<<<<<< HEAD
       <div>
+=======
+      <div className="mt-8">
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-2xl font-bold text-gray-900">
             Featured Products
           </h2>
+<<<<<<< HEAD
+=======
+          <button className="text-blue-600 font-medium hover:text-blue-800 transition-colors">
+            View All &rarr;
+          </button>
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
+<<<<<<< HEAD
           {/* Empty Placeholders (Skeleton) */}
           {[...Array(6)].map((_, index) => (
             <div
@@ -39,6 +92,8 @@ const Home = () => {
               </div>
             </div>
           ))}
+=======
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
         </div>
       </div>
 

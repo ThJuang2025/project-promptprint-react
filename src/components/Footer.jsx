@@ -21,7 +21,11 @@ const Footer = () => {
               <div className="w-8 h-8 bg-linear-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center text-white font-bold">
                 P
               </div>
+<<<<<<< HEAD
               <span className="text-xl font-bold bg-linear-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+=======
+              <span className="text-xl font-bold bg-linear-to-br from-gray-900 to-gray-600 bg-clip-text text-transparent">
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
                 PromptPrint
               </span>
             </div>

@@ -4,12 +4,21 @@ const About = () => {
   return (
     <main className="w-full min-h-dvn mt-20 max-md:mt-40 ">
       {/* เนื้อหาเกี่ยวกับprojectที่ทำ */}
+<<<<<<< HEAD
       <section className=" w-full min-h-screen grid grid-cols-4 rows-4 gap-4 max-md:flex flex-col">
         <div className="col-span-2 row-span-4 flex flex-col justify-between  bg-white p-6 rounded-4xl shadow-sm mt-4 ">
           <h1 className="mt-6 font-bold text-8xl text-shadow-lg text-shadow-gray-500 max-md:text-4xl max-md:my-4 ">
             Pronpt Print Shop
           </h1>
           <p className="font-light text-2xl text-balance  max-md:text-[20px ">
+=======
+      <section className=" w-full min-h-screen grid grid-cols-5 rows-4 gap-4 max-md:flex flex-col">
+        <div className="col-span-2 row-span-4 flex flex-col justify-between  bg-white p-6 rounded-4xl shadow-sm mt-4 ">
+          <h1 className="mt-6 font-bold text-8xl text-shadow-lg text-shadow-gray-500 max-md:text-4xl max-md:my-4 ">
+            Prompt Print
+          </h1>
+          <p className="font-light text-2xl text-balance  max-md:text-[20px] ">
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
             At Prompt Print Shop, imagination has no limits. We seamlessly blend
             Prompt Engineering with your creative vision. By producing every
             item on-demand, we prioritize sustainability and eliminate
@@ -18,26 +27,43 @@ const About = () => {
             perfect.
           </p>
         </div>
+<<<<<<< HEAD
         <div className="flex flex-col col-start-3 col-span-2 row-start-1 row-span-3  bg-[url(/about-bg.png) bg-no-repeat bg-cover bg-center rounded-4xl mt-4">
+=======
+        <div className="flex flex-col col-span-3 col-start-3  row-start-1 row-span-3  bg-[url(/about-bg.png)] bg-no-repeat bg-cover bg-center rounded-4xl mt-4">
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
           <div className="h-2/5 flex items-center justify-center ">
             <h2 className=" text-gray-100 text-center font-bold text-8xl text-shadow-lg text-shadow-black max-md:text-6xl">
               Products
             </h2>
           </div>
+<<<<<<< HEAD
           <div className="h-3/5 w-full flex gap-2 justify-center items-center max-md: flex-wrap ">
             <img
               src="/products1.png"
               alt="hoodie"
               className="w-60 h-[85%  hover:scale-110"
+=======
+          <div className="h-3/5 w-full flex gap-1 justify-evenly items-center max-md:flex-wrap ">
+            <img
+              src="/products1.png"
+              alt="hoodie"
+              className="w-[25%] h-[85%] object-cover object-[60%_60%]  hover:scale-110"
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
             />
             <img
               src="/products2.png"
               alt="hoodie"
+<<<<<<< HEAD
               className="w-60 h-[85%  hover:scale-110"
+=======
+              className="w-[35%] h-[85%]  hover:scale-110"
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
             />
             <img
               src="/products3.png"
               alt="hoodie"
+<<<<<<< HEAD
               className="w-60 h-[85%  hover:scale-110"
             />
           </div>
@@ -45,6 +71,15 @@ const About = () => {
         <div className="col-start-3 col-span-2 row-start-4 row-span-1  bg-white  rounded-4xl shadow-sm max-md:h-auto w-full ">
           <div className="w-full h-full flex justify-evenly items-center ">
             <h2 className="text-6xl font-bold text-shadow-lg text-shadow-gray-500 max-md:text-4xl">
+=======
+              className="w-[35%] h-[85%]  hover:scale-110"
+            />
+          </div>
+        </div>
+        <div className="col-start-3 col-span-3 row-start-4 row-span-1  bg-white  rounded-4xl shadow-sm max-md:h-auto w-full ">
+          <div className="w-full h-full flex justify-evenly items-center ">
+            <h2 className="text-6xl font-bold text-shadow-lg text-shadow-gray-500 max-md:text-4xl max-md:p-1.5">
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
               Development team
             </h2>
           </div>
@@ -52,7 +87,11 @@ const About = () => {
       </section>
       {/* ข้อมูลของเกี่ยวกับทีม */}
       <section className=" w-full min-h-screen flex flex-col">
+<<<<<<< HEAD
         <div className=" bg-[url(/about-bg.png) bg-no-repeat bg-cover bg-center shadow-md w-full h-auto py-4  my-4 rounded-4xl flex justify-center items-center gap-4 flex-wrap ">
+=======
+        <div className=" bg-[url(/about-bg.png)] bg-no-repeat bg-cover bg-center shadow-md w-full h-auto py-4  my-4 rounded-4xl flex justify-center items-center gap-4 flex-wrap ">
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
           <div className="w-70 h-100 bg-white shadow-xl rounded-4xl flex flex-col justify-evenly items-center">
             <img
               src=""

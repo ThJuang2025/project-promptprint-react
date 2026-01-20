@@ -9,11 +9,19 @@ import {
 } from "lucide-react";
 
 const MockupZone = () => {
+<<<<<<< HEAD
   const [selectedTool, setSelectedTool = useState("upload");
 
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
       <div className="flex flex-col lg:flex-row h-[600px">
+=======
+  const [selectedTool, setSelectedTool] = useState("upload");
+
+  return (
+    <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+      <div className="flex flex-col lg:flex-row h-[600px]">
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
         {/* Left: Toolbar */}
         <div className="w-full lg:w-20 bg-gray-50 border-r border-gray-100 flex lg:flex-col items-center py-4 gap-4 overflow-x-auto lg:overflow-visible">
           {[
@@ -33,7 +41,11 @@ const MockupZone = () => {
               icon: <Shirt className="w-5 h-5" />,
               label: "Product",
             },
+<<<<<<< HEAD
           .map((tool) => (
+=======
+          ].map((tool) => (
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
             <button
               key={tool.id}
               onClick={() => setSelectedTool(tool.id)}
@@ -50,7 +62,11 @@ const MockupZone = () => {
 
         {/* Center: Canvas Area */}
         <div className="flex-1 bg-gray-50/50 relative flex items-center justify-center p-8">
+<<<<<<< HEAD
           <div className="relative w-full max-w-md aspect-3/4 bg-white rounded-lg shadow-2xl shadow-gray-200/50 flex items-center justify-center overflow-hidden">
+=======
+          <div className="relative w-full max-w-md aspect-[3/4] bg-white rounded-lg shadow-2xl shadow-gray-200/50 flex items-center justify-center overflow-hidden">
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
             {/* T-Shirt Base */}
             <div className="relative w-full h-full flex items-center justify-center bg-gray-100">
               <Shirt className="w-64 h-64 text-gray-300 stroke-1" />
@@ -87,7 +103,11 @@ const MockupZone = () => {
                 Base Color
               </label>
               <div className="flex gap-2">
+<<<<<<< HEAD
                 {["bg-white", "bg-black", "bg-blue-500", "bg-red-500".map(
+=======
+                {["bg-white", "bg-black", "bg-blue-500", "bg-red-500"].map(
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
                   (color) => (
                     <button
                       key={color}
@@ -101,7 +121,11 @@ const MockupZone = () => {
             <div className="border-t border-gray-100 my-4" />
 
             {/* AI Generator Placeholder */}
+<<<<<<< HEAD
             <div className="p-4 bg-linear-to-br from-indigo-50 to-blue-50 rounded-xl border border-blue-100">
+=======
+            <div className="p-4 bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl border border-blue-100">
+>>>>>>> 8cebf9cbacd9c20cadc7c2d09073714c65950344
               <div className="flex items-center gap-2 mb-2">
                 <span className="text-xs font-bold text-blue-600 bg-blue-100 px-2 py-0.5 rounded-full">
                   New
