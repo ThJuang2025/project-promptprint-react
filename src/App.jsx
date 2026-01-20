@@ -26,11 +26,7 @@ const App = () => {
   return (
     
     <Routes>
-<<<<<<< HEAD
-      
-=======
       {/* Main layout */}
->>>>>>> fd75a75a9bf7a6f9a88c3122471c13f2b905af11
       <Route path="/" element={<Layout />}>
         <Route index element={<LandingPage />} /> //New code from Juang
         <Route path="Home" element={<Home />} /> //New code from Juang
