@@ -17,7 +17,7 @@ import { useState } from "react";
 const Sidebar = ({ isOpen, onClose, variant = "drawer" }) => {
   const location = useLocation();
   const isDrawer = variant === "drawer";
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
   const menuItems = [
     { name: "Home", path: "/", icon: <Home className="w-5 h-5" /> },

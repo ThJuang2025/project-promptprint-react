@@ -90,15 +90,15 @@ const Cart = () => {
 
   if (loading) {
     return (
-      <div className="container mx-auto p-6 min-h-screen bg-black text-white flex items-center justify-center">
+      <div className="container mx-auto p-6 min-h-screen  text-white flex items-center justify-center">
         <div className="text-xl">Loading cart...</div>
       </div>
     );
   }
 
   return (
-    <div className="container mx-auto p-6 min-h-screen bg-black text-white">
-      <h1 className="text-3xl font-bold mb-8 bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+    <div className="container mx-auto p-6 min-h-screen  text-white">
+      <h1 className="text-3xl font-bold mb-8 bg-linear-to-r from-blue-600 to-cyan-400 bg-clip-text text-transparent">
         Your Shopping Cart
       </h1>
 

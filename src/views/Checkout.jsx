@@ -148,7 +148,7 @@ const Checkout = () => {
   }
 
   return (
-    <div className="container mx-auto p-6 min-h-screen bg-black text-white">
+    <div className="container mx-auto p-6 min-h-screen text-white">
       <h1 className="text-3xl font-bold mb-8 text-center bg-linear-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
         Secure Checkout
       </h1>
