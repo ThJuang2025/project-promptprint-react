@@ -7,42 +7,42 @@ const Home = () => {
       id: 1,
       name: "เสื้อยืด Premium Cotton Black",
       price: 890,
-      image: 'HomeBlackTshirt',
+      image: 'HomeBlackTshirt1.png',
       category: "T-Shirts"
     },
     {
       id: 2,
       name: "เสื้อยืด Premium Cotton Green",
       price: 950,
-      image: 'HomeGreenTshirt',
+      image: 'HomeGreenTshirt1.png',
       category: "T-Shirts"
     },
     {
       id: 3,
       name: "เสื้อยืด Premium Cotton Pastel",
       price: 790,
-      image: 'HomePastelTshirt',
+      image: 'HomePastelTshirt1.png',
       category: "T-Shirts"
     },
     {
       id: 4,
       name: "เสื้อยืด Premium Cotton Purple",
       price: 490,
-      image: 'HomePurpleTshirt',
+      image: 'HomePurpleTshirt1.png',
       category: "T-Shirts"
     },
     {
       id: 5,
       name: "เสื้อยืด Premium Cotton White",
       price: 1290,
-      image: 'HomeWhiteTshirt',
+      image: 'HomeWhiteTshirt1.png',
       category: "T-Shirts"
     },
     {
       id: 6,
       name: "เสื้อยืด Premium Cotton Red",
       price: 890,
-      image: 'HomeRedTshirt',
+      image: 'HomeRedTshirt1.png',
       category: "T-Shirts"
     }
   ];
@@ -52,11 +52,11 @@ const Home = () => {
       <div>
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-2xl font-bold text-gray-900">
-            Featured Products
+            Please select
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.length > 0 ? (
             // แสดงสินค้าจริง
             products.map((product) => (
