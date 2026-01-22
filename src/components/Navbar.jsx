@@ -135,14 +135,14 @@ const Navbar = ({ onMenuClick }) => {
                         <Package className="w-4 h-4" />
                         AI Design
                       </Link>
-                      <Link
+                      {/* <Link
                         to={`/orders/${localStorage.getItem("userId")}`}
                         onClick={() => setIsProfileOpen(false)}
                         className="flex items-center gap-2 px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors"
                       >
                         <ClipboardList className="w-4 h-4" />
                         My Orders
-                      </Link>
+                      </Link> */}
                       {/* Divider */}
                       <div className="border-t border-gray-100 my-1"></div>
                       {/* New code:22JAN25 ---------- */}
